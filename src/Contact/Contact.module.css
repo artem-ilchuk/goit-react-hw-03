@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  max-width: 260px;
+  padding: 10px 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon {
+  padding: 5px;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.del_btn {
+  display: block;
+  height: 25px;
+}
