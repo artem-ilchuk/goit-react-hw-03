@@ -3,16 +3,26 @@
   max-width: 260px;
   border: 2px solid black;
   border-radius: 5px;
+  box-shadow: 2px 2px 4px 4px grey;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background-color: lightgray;
 }
 
+.label {
+  margin-left: 1px;
+}
 .input {
   border: 1px solid black;
   border-radius: 2px;
   height: 25px;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.input::placeholder {
+  padding-left: 8px;
 }
 
 .field {
@@ -24,4 +34,17 @@
   max-width: 120px;
   height: 24px;
   margin: 0 auto;
+  box-shadow: 2px 2px 2px 2px grey;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: #d2b48c;
+  }
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 3px;
 }

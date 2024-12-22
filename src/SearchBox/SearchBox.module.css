@@ -6,4 +6,5 @@
   width: 280px;
   border: 1px solid black;
   border-radius: 2px;
+  box-shadow: 2px 2px 2px 2px grey;
 }

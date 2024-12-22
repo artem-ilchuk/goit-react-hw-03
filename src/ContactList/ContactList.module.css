@@ -4,4 +4,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 570px;
+}
+
+.item {
+  box-shadow: 2px 2px 4px 4px grey;
+  border-radius: 5px;
+  background-color: lightgray;
 }

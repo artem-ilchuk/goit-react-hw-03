@@ -10,7 +10,20 @@ const ContactForm = ({ onAdd }) => {
   };
 
   const handleSubmit = (values, actions) => {
-    const newContact = { id: nanoid(), ...values };
+    const capitializedName = (name) => {
+      return name
+        .split(" ")
+        .map(
+          (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join(" ");
+    };
+
+    const newContact = {
+      id: nanoid(),
+      name: capitializedName(values.name),
+      number: values.number,
+    };
     onAdd(newContact);
     actions.resetForm();
   };

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
-  max-width: 260px;
+  gap: 40px;
+  width: 250px;
   padding: 10px 8px;
   border: 2px solid black;
   border-radius: 5px;
@@ -30,4 +30,10 @@
 .del_btn {
   display: block;
   height: 25px;
+  box-shadow: 2px 2px 2px 2px grey;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: #d2b48c;
+  }
 }
